@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Movie Details</title>
+
+    <style>
+    header{
+    background-image: url(marbel-bg.jpg);
+    color: white;
+    height: 60px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    }
+    nav{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    height: 55px;
+    }
+    .navbar{
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="name">Movies</h1>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto p-2" style="color: rgb(233, 233, 179)" href="#" ><img src="logo.png" alt="Logo" width="40" height="40">
+            BookMe</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color: rgb(233, 233, 179)" href="task1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color: rgb(233, 233, 179)" href="movie-details.html ">Movies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(233, 233, 179)" href="task1.html#events">Events</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color: rgb(233, 233, 179)" href="booking-page.html">Booking</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(233, 233, 179)" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  City
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                  <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Chennai</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search"><button type="button" class="btn btn-outline-warning" style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: .5rem;"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center;">Upcoming movies</h1>
+    <br>
+
+    <div class="container">
+    <!-- Movie 1 - Gadar2 -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="gadar2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Gadar 2: The Katha Continues</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 8.4 / 10 <br>
+                  Gadar 2 brings back India`s most loved family of Tara, Sakeena and Jeete; 22 years after its predecessor. Set against the backdrop of Indo-Pakistan war of 1971, Tara Singh, once again, will face every enemy to protect the honor of country and family.</p>
+                <p class="card-text"><small class="text-body-secondary">Action, Drama, Period | 2h 50m | BKC</small></p>
+              </div>
+            </div>
+          <div class="d-grid mx-auto">
+            <a class="btn btn-danger" href="booking-page.html" role="button">Book Now</a>
+          </div> 
+          </div>
+        </div>
+      
+    <!-- Movie 2- OMG 2 -->
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="omg2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">OMG 2</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 8.7 / 10 <br>
+                  Life is bliss until one day Kanti Sharan Mudgal`s son Vivek is blamed for immoral conduct and expelled from school. Overwhelmed, Kanti plans to leave town until a divine intervention leads him to seek justice by taking those responsible to court.</p>
+                <p class="card-text"><small class="text-body-secondary">Comedy, Drama | 2h 36m | BKC</small></p>
+              </div>
+            </div>
+            <div class="d-grid mx-auto">
+              <a class="btn btn-danger" href="booking-page.html" role="button">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- Movie 2- Dream Girl 2 -->
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="dreamgirl.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Dream Girl 2</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 7.8 / 10 <br>
+                  Karam, a small-town boy from Mathura, is struggling to pay his father`s debt, who has borrowed money from nearly everyone on the planet. On the other hand, he is deeply in love with Pari, whose father has kept conditions to marry her.</p>
+                <p class="card-text"><small class="text-body-secondary">Comedy, Drama, Romantic | 2h 13m | BKC</small></p>
+              </div>
+            </div>
+            <div class="d-grid mx-auto">
+              <a class="btn btn-danger" href="booking-page.html" role="button">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+    <!-- Movie 3- Rocky Aur Rani Kii Prem Kahaani -->
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="rockyaurrani.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Rocky Aur Rani Kii Prem Kahaani</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 8 / 10 <br>
+                  Rocky Aur Rani Kii Prem Kahaani magnifies the power of love, embraces the complexities of relationships, and celebrates the beauty of both perfect and imperfect families.</p>
+                <p class="card-text"><small class="text-body-secondary">Comedy, Family, Romantic | 2h 48m | BKC</small></p>
+              </div>
+            </div>
+            <div class="d-grid mx-auto">
+              <a class="btn btn-danger" href="booking-page.html" role="button">Book Now</a>
+            </div> 
+          </div>
+        </div>
+
+    <!-- Movie 4- Oppenheimer-->
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="oppenheimer.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Oppenheimer</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 8.9 / 10 <br>
+                  The film is based on the Pulitzer Prize-winning book American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird and the late Martin J. Sherwin.</p>
+                <p class="card-text"><small class="text-body-secondary">Biography, Drama, Historical | 3h 10m | BKC</small></p>
+              </div>
+            </div>
+          <div class="d-grid mx-auto">
+            <button class="btn btn-danger" type="button"><a href="booking-page.html" style="text-decoration: none; color: white;">Book Now</a></button>
+          </div>
+          </div>
+        </div>
+
+    <!-- Movie 5- Barbie-->
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="barbie.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Barbie</h5>
+                <p class="card-text">
+                  <em>Rating:</em> 7.3 / 10 <br> <br>
+                  To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or you`re a Ken.</p>
+                <p class="card-text"><small class="text-body-secondary">Adventure, Comedy, Fantasy | 1h 54m | BKC</small></p>
+              </div>
+            </div>
+            <div class="d-grid mx-auto">
+              <a class="btn btn-danger" href="booking-page.html" role="button">Book Now</a>
+            </div>     
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container bg">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="task1.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="movie-details.html" class="nav-link px-2 text-body-secondary">Movies</a></li>
+          <li class="nav-item"><a href="task1.html#events" class="nav-link px-2 text-body-secondary">Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 BookMe, Inc</p>
+      </footer>
+    </div>    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
